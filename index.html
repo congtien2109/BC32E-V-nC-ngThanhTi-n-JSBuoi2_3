@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>bt 2-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="homeWork p-2">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="pills-home-tab"
+            data-toggle="pill"
+            href="#pills-home"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Bài Tập 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="pills-profile-tab"
+            data-toggle="pill"
+            href="#pills-profile"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Bài Tập 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-toggle="pill"
+            href="#pills-contact"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Bài Tập 3</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="pills-bt4-tab"
+            data-toggle="pill"
+            href="#pills-bt4"
+            role="tab"
+            aria-controls="pills-bt4"
+            aria-selected="false"
+            >Bài Tập 4</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="pills-bt5-tab"
+            data-toggle="pill"
+            href="#pills-bt5"
+            role="tab"
+            aria-controls="pills-bt5"
+            aria-selected="false"
+            >Bài Tập 5</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <h3>Tính tiền lương nhân viên</h3>
+          <input
+            class="form-control"
+            id="luong1Ngay"
+            type="number"
+            placeholder="Nhập lương 1 ngày"
+          />
+          <input
+            class="form-control mt-2"
+            id="soNgayLam"
+            type="number"
+            placeholder="Số ngày làm"
+          />
+          <button class="btn btn-success mt-2" id="btnTinhLuong">
+            Tính lương
+          </button>
+          <div class="alert alert-success mt-2" id="luong"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <h3>Tính giá trị trung bình</h3>
+          <form action="">
+            <div class="form-row">
+              <div class="col">
+                <input
+                  type="number"
+                  placeholder="Nhập số thứ 1"
+                  class="form-control"
+                  id="soThu1"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  placeholder="Nhập số thứ 2"
+                  class="form-control"
+                  id="soThu2"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  placeholder="Nhập số thứ 3"
+                  class="form-control"
+                  id="soThu3"
+                />
+              </div>
+            </div>
+            <div class="form-row mt-2">
+              <div class="col-4">
+                <input
+                  type="number"
+                  placeholder="Nhập số thứ 4"
+                  class="form-control"
+                  id="soThu4"
+                />
+              </div>
+              <div class="col-4">
+                <input
+                  type="number"
+                  placeholder="Nhập số thứ 5"
+                  class="form-control"
+                  id="soThu5"
+                />
+              </div>
+            </div>
+          </form>
+          <button class="btn btn-success mt-2" id="btnTinhTrungBinh">
+            Tính trung bình
+          </button>
+          <div class="alert alert-success mt-2" id="tinhTrungBinh"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          <h3>Quy đổi tiền</h3>
+          <input type="number" id="soTienUsd" placeholder="Nhập số tiền USD" class="form-control mt-3"> 
+          <button class="btn btn-success mt-3" id="btnQuyDoi">Quy đổi</button>
+          <div class="alert alert-success mt-3" id="quyDoi"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-bt4"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          <h3>Tính diện tích, chu vi hcn</h3>
+          <form action="">
+              <div class="form-row">
+                  <div class="col">
+                      <input type="number" class="form-control" id="chieuDai" placeholder="Nhập chiều dài">
+                  </div>
+                  <div class="col">
+                      <input type="number" id="chieuRong" class="form-control" placeholder="Nhập chiều rộng">
+                  </div>
+              </div>
+          </form>
+          <button class="btn btn-success mt-2" id="btnTinh">Tính</button>
+          <div class="alert alert-success mt-2" id="tinh">
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-bt5"
+          role="tabpanel"
+          aria-labelledby="pills-bt5-tab"
+        >
+          <h3>Tính tổng 2 ký số</h3>
+          <input type="number" id="so2ChuSo" class="form-control" placeholder="Nhập số có 2 chữ số">
+          <button class="btn btn-success mt-2" id="btnTinhTong">Tính Tổng</button>
+          <div class="alert alert-success mt-2" id="tinhTong">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
